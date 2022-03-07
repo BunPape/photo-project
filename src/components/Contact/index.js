@@ -9,7 +9,10 @@ function ContactForm() {
         setFormState({...formState, [e.target.name]: e.target.value })
     }
 
-    console.log(formState)
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log(formState)
+    }
 
     return (
         <section>
